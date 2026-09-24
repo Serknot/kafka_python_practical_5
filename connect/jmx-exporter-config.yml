@@ -1,0 +1,10 @@
+# Конфигурация jmx_prometheus_javaagent для Kafka Connect.
+#
+# Правил (rules) намеренно не задаём: без явных rules jmx_exporter
+# экспортирует ВСЕ атрибуты ВСЕХ MBean'ов, автоматически транслируя
+# ObjectName в имя метрики Prometheus (домен+type -> префикс метрики,
+# остальные ключи ObjectName -> labels). Для учебного стенда этого
+# достаточно и не требует ручного подбора regex-правил под каждую
+# метрику Kafka Connect.
+lowercaseOutputName: true
+lowercaseOutputLabelNames: true
