@@ -55,7 +55,7 @@ docker compose exec kafka kafka-topics.sh --bootstrap-server localhost:9092 --li
 
 Среди прочих должны быть `dbserver1.public.users` и `dbserver1.public.orders`.
 
-### Шаг 3. Данные в терминале (пункт 5 задания)
+### Шаг 3. Данные в терминале 
 
 ```bash
 docker compose logs -f cdc-consumer
